@@ -3,7 +3,7 @@ pipeline {
   stages {
      stage('Checkout') {
       steps {
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '9e612bee-967f-4172-a07a-a36df0a85b62', url: 'https://github.com/GANKNIR/content-jenkins-pipeline_working.git']]])
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '9e612bee-967f-4172-a07a-a36df0a85b62', url: 'https://github.com/GANKNIR/JenkinsCICD.git']]])
       }
     }
     stage('build') {
